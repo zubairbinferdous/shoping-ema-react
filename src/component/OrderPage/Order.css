@@ -1,0 +1,61 @@
+.order-item {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.order-data {
+  display: flex;
+  justify-content: space-between;
+}
+.order-img img {
+  width: 80px;
+  height: 80px;
+  background-color: tomato;
+  padding: 15px;
+  margin: 15px;
+}
+.order_item_area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order-info {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.name {
+  font-size: 16px;
+  padding: 0px 6px;
+  color: rgb(255, 255, 255);
+}
+.price {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 0px 6px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+.qua {
+  font-size: 14px;
+  padding: 0px 6px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.span {
+  color: yellow;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 55px;
+  margin-right: 20px;
+  color: rgb(49, 38, 38);
+  border-radius: 50%;
+}

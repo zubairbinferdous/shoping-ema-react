@@ -1,0 +1,25 @@
+.shop_container {
+  display: grid;
+  grid-template-columns: 4fr 1.5fr;
+}
+.product_area {
+  background-color: rgb(27, 27, 27);
+  color: aliceblue;
+  font-weight: 400;
+  padding: 0px 30px;
+}
+
+.product_order {
+  text-align: center;
+}
+.product_order h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 20px 0px;
+  font-size: 25px;
+}
+
+.product_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
