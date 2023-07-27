@@ -3,7 +3,7 @@
 import React from 'react';
 import './Side.css';
 
-const Side = ({total}) => {
+const Side = ({total , clearCart}) => {
 
     // console.log(total)
     let price = 0 ;
@@ -36,7 +36,7 @@ const Side = ({total}) => {
             <h3>Total Shipping Charge : ${shipping}</h3>
             <h3>Tax : {tax.toFixed(2)}</h3>
             <h2>Grand Total : {total_price.toFixed(2)}</h2>
-            <button className='button_order red'>Clear Cart</button> <br/> <br/>
+            <button className='button_order red' onClick={() => clearCart()}>Clear Cart</button> <br/> <br/>
             <button className='button_order yellow'>Review Order</button>
         </div>
     );

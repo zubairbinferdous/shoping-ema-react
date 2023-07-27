@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import { addToDb, getShoppingCart } from '../../utilities/fakedb.js';
+import { addToDb, deleteShoppingCart, getShoppingCart } from '../../utilities/fakedb.js';
 
 import Product from "../Product/Product.Jsx";
 import Side from "../Side/Side.jsx";
@@ -40,6 +40,11 @@ const Shop = () => {
   } ,[products])
 
 
+  const clearCart = () => {
+    setCart([]);
+    deleteShoppingCart();
+  }
+
 
   const addToCart = (ProductData) => {
     const newCart = [...cart , ProductData]
@@ -75,7 +80,7 @@ const Shop = () => {
       </div>
 
       <div className="product_order">
-        <Side total={cart}></Side>
+        <Side total={cart} clearCart={clearCart}></Side>
       </div>
       
     </div>
